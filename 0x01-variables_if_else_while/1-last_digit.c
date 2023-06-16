@@ -18,7 +18,7 @@ int main(void)
 	if (dig < 6 && !=0)
 	printf("Last digit of %d is %d and is less than 6 and not 0", n , dig);
 	else if (dig == 0)
-	printf("Last digit of %d is 0 and is 0", n, dig);
+	printf("Last digit of %d is %d and is 0", n, dig);
 	else
 	printf("Last digit of %d is %d  and is greater than 5", n, dig);
 	return (0);
