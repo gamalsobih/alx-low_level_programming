@@ -4,7 +4,7 @@
  *
  * Description: A C program that prints with put function
  *
- * return: 0 (sucsses)
+ * Return: Always 0 (sucsses)
 */
 int main(void)
 {
