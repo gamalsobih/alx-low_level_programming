@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int i = 48;
+	int i = 0;
 	int n;
 	int  m[10] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (n = i + 1 ; n < 58; n++)
+		for (n = i + 1 ; n < 10; n++)
 		{
 		putchar(m[i]);
 		putchar(m[n]);
