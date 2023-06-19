@@ -25,7 +25,8 @@ int main(void)
 							{
 								if ( n==g || n==h)
 								{
-									else
+								}
+								else
 							{
 							putchar(m[i]);
 							putchar(m[n]);
