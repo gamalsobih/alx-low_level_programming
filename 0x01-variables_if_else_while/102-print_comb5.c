@@ -9,6 +9,7 @@ int main(void)
 {
 	int i = 0;
 	int n;
+	int g;
 	int  m[10] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
 
 	for (i = 0; i < 10; i++)
@@ -19,9 +20,18 @@ int main(void)
 		putchar(m[n]);
 		if (i < 8)
 		{
+				putchar(' ');
+		}
+					for (g = i + 1 ; g < 10; g++)
+		{
+		putchar(m[i]);
+		putchar(m[g]);
+		if (i < 8)
+		{
 		putchar(',');
 		putchar(' ');
 		}
+
 	}
 
 	};
