@@ -19,10 +19,9 @@ int main(void)
 		{
 						for (g = 0 ; g < 10; g++)
 						{
-							for (h= 0 ; h< 10; h++)
+							for (h = 0 ; h < 10; h++)
 							{
 
-							
 							putchar(m[i]);
 							putchar(m[n]);
 							putchar(' ');
@@ -33,9 +32,7 @@ int main(void)
 								putchar(',');
 								putchar(' ');
 								}
-								
-								
-							}
+								}
 							}
 						}
 
