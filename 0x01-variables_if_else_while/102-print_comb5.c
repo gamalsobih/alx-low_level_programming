@@ -19,7 +19,7 @@ int main(void)
 		{
 							for (g = 0 ; g < 10; g++)
 							{
-									for (h = i+1 ; h < 10; h++)
+									for (h = 0 ; h < 10; h++)
 									{
                                         if(i==g && n==h)
                                         {
