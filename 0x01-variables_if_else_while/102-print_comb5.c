@@ -10,31 +10,32 @@ int main(void)
 	int i = 0;
 	int n;
 	int g;
+	int h;
 	int  m[10] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
 
 	for (i = 0; i < 10; i++)
 	{
 		for (n = 0 ; n < 10; n++)
 		{
-		for (g = i + 1 ; g < 10; g++)
-		{
-		putchar(m[i]);
-		putchar(m[n]);
-		putchar(' ');
-		for (g = i + 1 ; g < 10; g++)
-		{
-		putchar(m[i]);
-		putchar(m[g]);
-		}
+						for (g = i + 1 ; g < 10; g++)
+						{
+							for (h= g + 1 ; h< 10; h++)
+							{
+							putchar(m[i]);
+							putchar(m[n]);
+							putchar(' ');
+							putchar(m[g]);
+							putchar(m[h]);
+							}
 									if (i < 8)
 									{
 									putchar(',');
 									putchar(' ');
 									}
+						}
+
+
 		}
-
-
-	}
 
 	};
 	putchar('\n');
