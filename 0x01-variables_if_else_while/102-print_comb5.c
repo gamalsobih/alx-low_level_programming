@@ -21,9 +21,11 @@ int main(void)
 						{
 							for (h= 0 ; h< 10; h++)
 							{
-							if( i==g || i==h && n==g || n==h )
+							if( i==g || i==h )
 							{
-							}else
+								if ( n==g || n==h)
+								{
+									else
 							{
 							putchar(m[i]);
 							putchar(m[n]);
@@ -34,6 +36,8 @@ int main(void)
 								{
 								putchar(',');
 								putchar(' ');
+								}
+								}
 								}
 							}
 							}
