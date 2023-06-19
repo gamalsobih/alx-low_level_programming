@@ -17,25 +17,23 @@ int main(void)
 	{
 		for (n = 0 ; n < 10; n++)
 		{
-						for (g = 0 ; g < 10; g++)
-						{
-							for (h = 0 ; h < 10; h++)
+							for (g = 0 ; g < 10; g++)
 							{
+									for (h = 0 ; h < 10; h++)
+									{
 
-							putchar(m[i]);
-							putchar(m[n]);
-							putchar(' ');
-							putchar(m[g]);
-							putchar(m[h]);
-							if (i < 8)
-								{
-								putchar(',');
-								putchar(' ');
+									putchar(m[i]);
+									putchar(m[n]);
+									putchar(' ');
+									putchar(m[g]);
+									putchar(m[h]);
+											if (i < 8)
+												{
+												putchar(',');
+												putchar(' ');
+												}
+										}
 								}
-								}
-							}
-						}
-
 
 		}
 
