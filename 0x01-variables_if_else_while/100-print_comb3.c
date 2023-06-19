@@ -17,6 +17,7 @@ int main(void)
 		{
 		putchar(m[i]);
 		putchar(m[n]);
+		putchar(", ")
 	}
 
 	};
