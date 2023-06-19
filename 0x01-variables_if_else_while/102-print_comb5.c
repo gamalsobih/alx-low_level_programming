@@ -26,12 +26,13 @@ int main(void)
 							putchar(' ');
 							putchar(m[g]);
 							putchar(m[h]);
+							if (i < 8)
+								{
+								putchar(',');
+								putchar(' ');
+								}
+
 							}
-									if (i < 8)
-									{
-									putchar(',');
-									putchar(' ');
-									}
 						}
 
 
