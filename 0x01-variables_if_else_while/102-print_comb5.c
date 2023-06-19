@@ -21,21 +21,32 @@ int main(void)
 							{
 									for (h = 0 ; h < 10; h++)
 									{
+                                        if(i==g && n==h)
+                                        {
+                                        }
+                                        else if(n==g && i==h)
+                                        { 
 
-									putchar(m[i]);
+										}else 
+										{
+										    									putchar(m[i]);
 									putchar(m[n]);
 									putchar(' ');
 									putchar(m[g]);
 									putchar(m[h]);
-											if (i < 8)
+											if (i < 9)
 												{
 												putchar(',');
 												putchar(' ');
 												}
 										}
-								}
-
-		}
+										}
+									    
+									}
+							    
+							}
+							
+		
 
 	};
 	putchar('\n');
