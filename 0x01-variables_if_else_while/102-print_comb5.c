@@ -16,11 +16,12 @@ int main(void)
 	{
 		for (n = 0 ; n < 10; n++)
 		{
+		for (g = i + 1 ; g < 10; g++)
+		{
 		putchar(m[i]);
 		putchar(m[n]);
 		putchar(' ');
-		for (g = i + 1 ; g < 10; g++)
-		{
+
 		putchar(m[i]);
 		putchar(m[g]);
 		if (i < 8)
