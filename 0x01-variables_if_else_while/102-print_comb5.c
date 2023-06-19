@@ -18,11 +18,8 @@ int main(void)
 		{
 		putchar(m[i]);
 		putchar(m[n]);
-		if (i < 8)
-		{
-				putchar(' ');
-		}
-					for (g = i + 1 ; g < 10; g++)
+		putchar(' ');
+		for (g = i + 1 ; g < 10; g++)
 		{
 		putchar(m[i]);
 		putchar(m[g]);
@@ -30,6 +27,7 @@ int main(void)
 		{
 		putchar(',');
 		putchar(' ');
+		}
 		}
 
 	}
