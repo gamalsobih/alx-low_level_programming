@@ -8,11 +8,12 @@
 int main(void)
 {
 	int i = 0;
+	int n;
 	char m[10] = "0123456789";
 
 	for (i = 0; i < 10; i++)
 	{
-		for (int n = i+1 ; n < 10; n++)
+		for (n = i+1 ; n < 10; n++)
 		{
 		putchar(m[i]);
 		putchar(m[n]);
