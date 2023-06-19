@@ -9,7 +9,7 @@ int main(void)
 {
 	int i = 0;
 	int n;
-	char m[10] = "0123456789";
+	int  m[10] = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
 
 	for (i = 0; i < 10; i++)
 	{
