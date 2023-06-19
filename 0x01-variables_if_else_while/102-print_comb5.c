@@ -21,14 +21,16 @@ int main(void)
 		putchar(m[i]);
 		putchar(m[n]);
 		putchar(' ');
-
+		for (g = i + 1 ; g < 10; g++)
+		{
 		putchar(m[i]);
 		putchar(m[g]);
-		if (i < 8)
-		{
-		putchar(',');
-		putchar(' ');
 		}
+									if (i < 8)
+									{
+									putchar(',');
+									putchar(' ');
+									}
 		}
 
 
