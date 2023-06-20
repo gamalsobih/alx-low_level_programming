@@ -7,13 +7,10 @@
  */
 void print_alphabet(void)
 {
-	
-	int count;
-
-	
-	for (count = 97; count < 123; count++)
+	int i;
+	for (i = 97; i < 123; i++)
 	{
-		_putchar(count);
+		_putchar(i);
 	}
 	_putchar('\n');
 	return (0);
