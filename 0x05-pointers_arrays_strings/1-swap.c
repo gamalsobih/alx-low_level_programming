@@ -6,12 +6,10 @@
  * @b: second integer.
  * Description : this  function swap values 
  * Return: no return.
-
  */
 	void swap_int(int *a, int *b)
 	{
 	int c = *a;
 	*a = *b;
 	*b = c;
-
 	}
