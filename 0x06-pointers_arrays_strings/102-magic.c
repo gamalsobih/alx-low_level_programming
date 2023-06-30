@@ -5,7 +5,6 @@
  * @size: size of buffer.
  * Return: no return.
  */
-
 int main(void)
 {
   int n;
