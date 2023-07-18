@@ -2,11 +2,12 @@
 #include <stdlib.h>
 /**
 *    main = print f
-*       returne 0
+*       returne : always 0.
 */
 
-int main()
+int main(void)
 {
     printf("%s\n",__FILE__);
+    return 0;
 }
 
