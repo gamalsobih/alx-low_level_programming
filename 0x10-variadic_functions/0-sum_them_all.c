@@ -6,18 +6,19 @@
  *
  * Return: sum of its parameters.
  */
-
 int sum_them_all(const unsigned int n, ...)
+{
+    int x=0;
+    va_list m;
+    if (n == 0)
+    return (0);
+    va_start(m,n);
+    for(int i =0 ;i<n ; i++)
     {
-        int x=0;
-        va_list m;
-        va_start(m,n);
-        for(int i =0 ;i<n ; i++)
-    	{
-            int o =va_arg(m,int);
-            x=x+o;
-        }
-        va_end(m);
-        return(x);
-
+    int o =va_arg(m,int);
+    x=x+o;
     }
+    va_end(m);
+    return(x);
+
+}
