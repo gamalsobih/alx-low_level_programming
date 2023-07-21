@@ -13,8 +13,7 @@ int sum_them_all(const unsigned int n, ...)
         va_list m;
         va_start(m,n);
         for(int i =0 ;i<n ; i++)
-        {
-            printf(x);
+    	{
             int o =va_arg(m,int);
             x=x+o;
         }
