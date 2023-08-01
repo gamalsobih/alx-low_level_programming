@@ -8,12 +8,12 @@
  */
 size_t listint_len(const listint_t *h)
 {
-    size_t gnode = 0;
-    while (h !=NULL)
-    {
-        h = h->next;
-        gnode++;
-    }
-    return(gnode);
+	size_t gnodes = 0;
 
+	while (h != NULL)
+	{
+		h = h->next;
+		gnodes++;
+	}
+	return (gnodes);
 }
