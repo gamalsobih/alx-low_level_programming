@@ -1,67 +1,36 @@
 #include "lists.h"
-#include <stdlib.h>
-
 /**
- * len_node - list len
- *
- * @node:list
- * Return:unsigned int
- */
-unsigned int len_node(dlistint_t **node)
-{
-	unsigned int len = 0;
-	dlistint_t *start;
-
-	start = *node;
-	while (start != NULL)
-	{
-		len += 1;
-		start = start->next;
-	}
-	return (len);
-}
-
-/**
- * delete_dnodeint_at_index - delete node at give index
- * @head:list
- * @index:given index
- * Return: -1 or 0
+ * delete_dnodeint_at_index - delet  a node in a given position
+ * @head: double pointer to structure
+ * @index: index of node to delete from the list
+ * Return: 1 sucess, -1 failure
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *start;
-	unsigned int i;
-	unsigned int len;
-	len = len_node(*head);
+	dlistint_t *tmp;
+	unsigned int nth = 0;
 
-	start = *head;
-
+	tmp = *head;
 	if (*head == NULL)
 		return (-1);
 	if (index == 0)
 	{
-		start = start->next;
-		free(*head);
-		*head = start;
-		if (start != NULL)
-			start->prev = NULL;
+		if (tmp->next)
+			tmp->next->prev = NULL;
+		(*head) = (*head)->next;
+		free(tmp);
 		return (1);
 	}
-	for (i = 0; i <= index - 1; i++)
+	while (tmp && nth < index)
 	{
-		start = start->next;
-		if (!start)
-			return (-1);
+		tmp = tmp->next;
+		nth++;
 	}
-	if (len - 1 == index)
-	{
-		start->prev->next = NULL;
-		free(start);
-		return (1);
-	}
-	start->prev->next = start->next;
-	start->next->prev = start->prev;
-	free(start);
+	if (tmp == NULL)
+		return (-1);
+	tmp->prev->next = tmp->next;
+	if (tmp->next)
+		tmp->next->prev = tmp->prev;
+	free(tmp);
 	return (1);
 }
-
